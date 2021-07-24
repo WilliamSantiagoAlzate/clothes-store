@@ -1,0 +1,12 @@
+// Import bases and settings
+@import "./base/variables";
+@import "./base/base";
+@import "./base/mixins";
+
+// Import components
+@import "./components/notFound/notFound";
+
+// Import desktop queries
+@media (min-width: 1024px) {
+  @import "./components/styles-desktop";
+}
