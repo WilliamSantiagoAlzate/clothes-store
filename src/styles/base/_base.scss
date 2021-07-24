@@ -14,6 +14,7 @@ html {
 // Reset <button> styles
 button {
   border: none;
+  background-color: transparent;
 }
 
 // Reset <input> styles
@@ -38,4 +39,9 @@ select {
 // Reset <a> styles
 a {
   text-decoration: none;
+}
+
+// Reset <li> styles
+li {
+  list-style: none;
 }

@@ -1,0 +1,36 @@
+.menu {
+  top: 100px;
+  width: 100%;
+  height: fit-content;
+  background-color: $black;
+  padding: 20px 0;
+
+  &__icon {
+    display: none;
+  }
+
+  &__container {
+    @include flex-center;
+  }
+  
+  &__item {
+    color: $white;
+    padding: 0 30px;
+    font-weight: normal;
+    border-right: 1px solid $white;
+    margin-bottom: 0;
+
+    &:last-child {
+      border-right: none;
+    }
+
+    &:hover {
+      background-color: $white;
+      color: $black;
+    }
+  }
+
+  &--collapsed {
+    transform: translateX(0);
+  }
+}

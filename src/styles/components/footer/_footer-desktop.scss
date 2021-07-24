@@ -1,0 +1,23 @@
+.footer {
+  padding-bottom: 20px;
+
+  &__title {
+    button {
+      display: none;
+    }
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__title {
+    border-bottom: none;
+  }
+}
+
+.copyright {
+  border-top: 1px solid $white;
+  padding-top: 20px;
+}
