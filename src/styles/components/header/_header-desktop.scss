@@ -1,0 +1,25 @@
+.header {
+  height: 117px;
+
+  &__title {
+    order: 1;
+  }
+
+  &__menu {
+    display: none;
+  }
+
+  &__icon-cart {
+    order: 3;
+  }
+
+  &__icon-user {
+    display: inline;
+    order: 4;
+  }
+
+  &__button {
+    display: inline;
+    order: 5;
+  }
+}

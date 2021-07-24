@@ -1,0 +1,54 @@
+.header {
+  @include flex-between;
+  width: 100vw;
+  height: 180px;
+  flex-wrap: wrap;
+  padding: 10px 20px;
+
+  &__title {
+    font-family: $bebas;
+    font-size: 4.8rem;
+  }
+
+  &__menu {
+    height: 38px;
+  }
+
+  &__icon-cart {
+    position: relative;
+    cursor: pointer;
+
+    span {
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      color: $white;
+      font-weight: bold;
+      background-color: $purple;
+      font-size: 1.5rem;
+      border-radius: 50%;
+      padding: 4px 9px;
+    }
+  }
+
+  &__icon-user {
+    display: none;
+    cursor: pointer;
+  }
+
+  &__button {
+    display: none;
+    font-size: 1.8rem;
+    color: $black;
+    font-weight: bold;
+    background-color: $white;
+    border: 1px solid $black;
+    padding: 10px 20px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $black;
+      color: $white;
+    }
+  }
+}

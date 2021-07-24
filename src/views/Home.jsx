@@ -1,3 +1,6 @@
+// Components
+import { Header } from '../components/Header/Header';
+
 export const HomeView = () => (
-  <h1>Home</h1>
+  <Header />
 )

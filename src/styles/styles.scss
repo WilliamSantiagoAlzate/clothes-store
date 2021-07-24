@@ -5,6 +5,8 @@
 
 // Import components
 @import "./components/notFound/notFound";
+@import "./components/header/header";
+@import "./components/searchInput/searchInput";
 
 // Import desktop queries
 @media (min-width: 1024px) {

@@ -1,0 +1,18 @@
+.search-input {
+  @include flex-between;
+  width: 100%;
+  height: 58px;
+  background-color: $gray6;
+  padding-left: 20px;
+
+  &__icon {
+    @include flex-center;
+    width: 72px;
+    height: 100%;
+    background-color: $gray4;
+  }
+
+  input {
+    font-size: 2rem;
+  }
+}
