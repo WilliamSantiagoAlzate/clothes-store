@@ -1,6 +1,7 @@
 .menu {
-  position: sticky;
-  width: 100vw;
+  top: 117px;
+  width: 100%;
+  height: fit-content;
   background-color: $black;
   padding: 20px 0;
 
@@ -27,5 +28,9 @@
       background-color: $white;
       color: $black;
     }
+  }
+
+  &--collapsed {
+    transform: translateX(0);
   }
 }

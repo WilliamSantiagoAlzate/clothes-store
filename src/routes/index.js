@@ -6,12 +6,10 @@ import { NotFoundView } from '../views/NotFound';
 
 export const Routes = () => (
   <BrowserRouter>
-    <main>
-      <Switch>
-        <Route exact component={HomeView} path="/" />
-        <Route component={NotFoundView} path="/404" />
-        <Redirect to="/404" />
-      </Switch>
-    </main>
+    <Switch>
+      <Route exact component={HomeView} path="/" />
+      <Route component={NotFoundView} path="/404" />
+      <Redirect to="/404" />
+    </Switch>
   </BrowserRouter>
 );

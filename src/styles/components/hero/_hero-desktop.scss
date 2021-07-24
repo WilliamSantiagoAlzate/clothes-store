@@ -1,0 +1,19 @@
+.hero {
+  margin-top: 117px + 77px;
+}
+
+.categories {
+  padding: 40px 40px 0;
+  display: flex;
+}
+
+.category {
+  &__title {
+    font-size: 6rem;
+    bottom: 60px;
+  }
+
+  &:first-child {
+    margin-right: 30px;
+  }
+}
