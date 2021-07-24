@@ -1,5 +1,6 @@
 .header {
-  height: 117px;
+  height: 100px;
+  padding: 0 40px;
 
   &__title {
     order: 1;
@@ -9,17 +10,15 @@
     display: none;
   }
 
-  &__icon-cart {
+  &__options {
     order: 3;
   }
 
   &__icon-user {
     display: inline;
-    order: 4;
   }
 
   &__button {
     display: inline;
-    order: 5;
   }
 }

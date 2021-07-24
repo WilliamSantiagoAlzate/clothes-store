@@ -14,13 +14,15 @@ export const Component = ({ openMenu }) => (
       <img src={Menu} alt="Icono del menu"/>
     </button>
     <h1 className="header__title">CLOTHESSTORE</h1>
-    <div className="header__icon-cart">
-      <img src={Cart} alt="Icono de un carrito de compras"/>
-      <span>1</span>
-    </div>
+    <section className="header__options">
+      <div className="header__icon-cart">
+        <img src={Cart} alt="Icono de un carrito de compras"/>
+        <span>1</span>
+      </div>
+      <img src={User} alt="Icono de un usuario" className="header__icon-user" />
+      <button className="header__button">Iniciar sesión</button>
+    </section>
     <SearchInput />
-    <img src={User} alt="Icono de un usuario" className="header__icon-user" />
-    <button className="header__button">Iniciar sesión</button>
   </header>
 );
 
