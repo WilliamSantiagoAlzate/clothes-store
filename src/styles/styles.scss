@@ -10,6 +10,10 @@
 @import "./components/menu/menu";
 @import "./components/hero/hero";
 @import "./components/footer/footer";
+@import "./components/products/products";
+@import "./components/card/card";
+@import "./components/carousel/carousel";
+@import "./components/spinner/spinner";
 
 // Import desktop queries
 @media (min-width: 1024px) {

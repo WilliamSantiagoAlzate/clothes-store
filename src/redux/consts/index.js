@@ -1,2 +1,8 @@
+// Menu
 export const CLOSE_MENU = 'CLOSE_MENU';
 export const OPEN_MENU = 'OPEN_MENU';
+
+// Products
+export const START_GET_PRODUCTS = 'START_GET_PRODUCTS';
+export const SUCCESS_GET_PRODUCTS = 'SUCCESS_GET_PRODUCTS';
+export const ERROR_GET_PRODUCTS = 'ERROR_GET_PRODUCTS';

@@ -1,0 +1,9 @@
+.prev-arrow-button {
+  @include arrow-button;
+  left: -50px;
+}
+
+.next-arrow-button {
+  @include arrow-button;
+  right: -50px;
+}
