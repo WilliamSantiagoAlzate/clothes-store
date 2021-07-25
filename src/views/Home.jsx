@@ -3,11 +3,18 @@ import { connect } from 'react-redux';
 import { Hero } from '../components/Home/Hero/Hero';
 import { Products } from '../components/Home/Products/Products';
 import { SearchedProducts } from '../components/Home/SearchedProducts/SearchedProducts';
+// Actions
+import { showHomeSection } from '../redux/actions/products';
 
-export const View = ({ showSearchedProcutsSection }) => (
+export const View = ({ showSearchedProcutsSection, showHomeSection }) => (
   <main>
     {showSearchedProcutsSection ?
-      <SearchedProducts />
+      <>
+        <div className="cart__button-container">
+          <button className="cart__back-button" onClick={showHomeSection}>VOLVER</button>
+        </div>
+        <SearchedProducts />
+      </>
       :
       <>
         <Hero />
@@ -22,4 +29,11 @@ const mapStateToProps = state => ({
   showSearchedProcutsSection: state.products.showSearchedProcutsSection,
 });
 
-export const HomeView = connect(mapStateToProps, null)(View);
+// Map Redux actions with dispatch funcion to component props
+const mapDispatchToProps = dispatch => ({
+  showHomeSection() {
+    dispatch(showHomeSection())
+  },
+});
+
+export const HomeView = connect(mapStateToProps, mapDispatchToProps)(View);

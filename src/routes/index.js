@@ -1,17 +1,24 @@
 import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 // Layout
-import { Layout } from '../layout/Layout'
+import { MainLayout } from '../layout/MainLayout'
+import { CartLayout } from '../layout/CartLayout'
 // Views
 import { HomeView } from '../views/Home';
+import { CartView } from '../views/Cart';
 import { NotFoundView } from '../views/NotFound';
 
 export const Routes = () => (
   <BrowserRouter>
     <Switch>
       <Route exact path="/">
-        <Layout>
+        <MainLayout>
           <HomeView/>
-        </Layout>
+        </MainLayout>
+      </Route>
+      <Route exact path="/carrito">
+        <CartLayout>
+          <CartView/>
+        </CartLayout>
       </Route>
       <Route component={NotFoundView} path="/404" />
       <Redirect to="/404" />

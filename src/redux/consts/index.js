@@ -2,6 +2,10 @@
 export const CLOSE_MENU = 'CLOSE_MENU';
 export const OPEN_MENU = 'OPEN_MENU';
 
+// Cart
+export const ADD_ITEM = 'ADD_ITEM';
+export const REMOVE_ITEM = 'REMOVE_ITEM';
+
 // Products
 export const START_GET_PRODUCTS = 'START_GET_PRODUCTS';
 export const SUCCESS_GET_PRODUCTS = 'SUCCESS_GET_PRODUCTS';

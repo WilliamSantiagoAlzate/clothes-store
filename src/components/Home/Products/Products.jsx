@@ -21,13 +21,7 @@ export const Component = ({ getProducts, products, loadingProducts }) => {
           {products.map(product => (
             <div key={product.id}>
               <div className="products__content">
-                <Card
-                  title={product.title}
-                  image={product.thumbnail}
-                  price={product.price}
-                  salePrice={product.original_price ? product.original_price : null}
-                  discount={100 - ((100 * product.price) / product.original_price)}
-                />
+                <Card product={product} />
               </div>
             </div>
 
