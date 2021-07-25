@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react';
 // Custom hooks
-import { useWindowSize } from '../../customHooks/useWindowSize';
+import { useWindowSize } from '../../../customHooks/useWindowSize';
 // Icons
-import Facebook from '../../assets/svgs/facebook.svg';
-import Twitter from '../../assets/svgs/twitter.svg';
-import Instagram from '../../assets/svgs/instagram.svg';
-import Youtube from '../../assets/svgs/youtube.svg';
+import Facebook from '../../../assets/svgs/facebook.svg';
+import Twitter from '../../../assets/svgs/twitter.svg';
+import Instagram from '../../../assets/svgs/instagram.svg';
+import Youtube from '../../../assets/svgs/youtube.svg';
 
 export const Footer = () => {
   const { width } = useWindowSize()

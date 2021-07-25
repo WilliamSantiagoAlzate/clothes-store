@@ -1,12 +1,12 @@
 // Custom hooks
-import { useWindowSize } from '../../customHooks/useWindowSize';
+import { useWindowSize } from '../../../customHooks/useWindowSize';
 // Components
 import { Category } from '../Category/Category';
 // Images
-import Kids from '../../assets/img/categorias-destacadas-moda-infantil.png';
-import Protection from '../../assets/img/categorias-destacadas-proteccion.png';
-import BannerDesktop from '../../assets/img/banner-principal-desktop.png';
-import BannerMobile from '../../assets/img/banner-principal-mobile.png';
+import Kids from '../../../assets/img/categorias-destacadas-moda-infantil.png';
+import Protection from '../../../assets/img/categorias-destacadas-proteccion.png';
+import BannerDesktop from '../../../assets/img/banner-principal-desktop.png';
+import BannerMobile from '../../../assets/img/banner-principal-mobile.png';
 
 export const Hero = () => {
   const { width } = useWindowSize();

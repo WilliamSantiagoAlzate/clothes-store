@@ -1,18 +1,25 @@
+import { connect } from 'react-redux';
 // Components
-import { Header } from '../components/Header/Header';
-import { Menu } from '../components/Menu/Menu';
-import { Hero } from '../components/Hero/Hero';
-import { Products } from '../components/Products/Products';
-import { Footer } from '../components/Footer/Footer';
+import { Hero } from '../components/Home/Hero/Hero';
+import { Products } from '../components/Home/Products/Products';
+import { SearchedProducts } from '../components/Home/SearchedProducts/SearchedProducts';
 
-export const HomeView = () => (
-  <>
-    <Header />
-    <Menu />
-    <main>
-      <Hero />
-      <Products />
-    </main>
-    <Footer />
-  </>
+export const View = ({ showSearchedProcutsSection }) => (
+  <main>
+    {showSearchedProcutsSection ?
+      <SearchedProducts />
+      :
+      <>
+        <Hero />
+        <Products />
+      </>
+    }
+  </main>
 )
+
+// Map state from global state to component props
+const mapStateToProps = state => ({
+  showSearchedProcutsSection: state.products.showSearchedProcutsSection,
+});
+
+export const HomeView = connect(mapStateToProps, null)(View);

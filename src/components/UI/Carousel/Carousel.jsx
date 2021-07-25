@@ -2,8 +2,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 // Import icons
-import PrevArrowIcon from '../../assets/svgs/prev-arrow.svg';
-import NextArrowIcon from '../../assets/svgs/next-arrow.svg';
+import PrevArrowIcon from '../../../assets/svgs/prev-arrow.svg';
+import NextArrowIcon from '../../../assets/svgs/next-arrow.svg';
 
 const PrevArrow = ({ onClick }) => (
   <button

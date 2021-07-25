@@ -1,11 +1,11 @@
 import { useEffect } from "react";
 import { connect } from "react-redux";
 // Components
-import { Carousel } from '../Carousel/Carousel';
-import { Card } from '../Card/Card';
-import { Spinner } from '../Spinner/Spinner';
+import { Carousel } from '../../UI/Carousel/Carousel';
+import { Card } from '../../UI/Card/Card';
+import { Spinner } from '../../UI/Spinner/Spinner';
 // Actions
-import { getProducts } from '../../redux/actions/products';
+import { getProducts } from '../../../redux/actions/products';
 
 export const Component = ({ getProducts, products, loadingProducts }) => {
   // Get products
