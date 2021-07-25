@@ -1,4 +1,4 @@
-import Cart from '../../assets/img/cart-icon.PNG';
+import Cart from '../../../assets/img/cart-icon.PNG';
 
 export const Card = ({
   image,

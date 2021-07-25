@@ -1,8 +1,8 @@
 import { connect } from 'react-redux';
 // Icons
-import Close from '../../assets/svgs/Icon ionic-ios-close-circle-outline.svg';
+import Close from '../../../assets/svgs/Icon ionic-ios-close-circle-outline.svg';
 // Actions
-import { closeMenu } from '../../redux/actions/menu';
+import { closeMenu } from '../../../redux/actions/menu';
 
 export const Component = ({ menuClassName, closeMenu }) => (
   <nav className={menuClassName}>

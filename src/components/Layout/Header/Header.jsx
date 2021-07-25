@@ -1,19 +1,22 @@
 import { connect } from 'react-redux';
 // Components
-import { SearchInput } from '../SearchInput/SearchInput';
+import { SearchInput } from '../../UI/SearchInput/SearchInput';
 // Icons
-import Cart from '../../assets/svgs/icon-cart.svg';
-import User from '../../assets/svgs/icon-user.svg';
-import Menu from '../../assets/img/menu-icon.PNG';
+import Cart from '../../../assets/svgs/icon-cart.svg';
+import User from '../../../assets/svgs/icon-user.svg';
+import Menu from '../../../assets/img/menu-icon.PNG';
 // Actions
-import { openMenu } from '../../redux/actions/menu';
+import { openMenu } from '../../../redux/actions/menu';
+import { showHomeSection } from '../../../redux/actions/products';
 
-export const Component = ({ openMenu }) => (
+export const Component = ({ openMenu, showHomeSection }) => (
   <header className="header">
     <button className="header__menu" onClick={openMenu}>
       <img src={Menu} alt="Icono del menu"/>
     </button>
-    <h1 className="header__title">CLOTHESSTORE</h1>
+    <button onClick={showHomeSection}>
+      <h1 className="header__title">CLOTHESSTORE</h1>
+    </button>
     <section className="header__options">
       <div className="header__icon-cart">
         <img src={Cart} alt="Icono de un carrito de compras"/>
@@ -30,7 +33,10 @@ export const Component = ({ openMenu }) => (
 const mapDispatchToProps = dispatch => ({
   openMenu() {
     dispatch(openMenu())
-  }
+  },
+  showHomeSection() {
+    dispatch(showHomeSection())
+  },
 });
 
 export const Header = connect(null, mapDispatchToProps)(Component);
