@@ -40,9 +40,14 @@ select {
 // Reset <a> styles
 a {
   text-decoration: none;
+  color: $black;
 }
 
 // Reset <li> styles
 li {
   list-style: none;
+}
+
+main {
+  margin-top: 180px;
 }

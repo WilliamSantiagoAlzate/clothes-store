@@ -5,6 +5,7 @@
   font-size: 2rem;
 
   &__main {
+    margin: 0;
     width: 100%;
     position: relative;
   }
@@ -63,5 +64,17 @@
       width: 30px;
       margin-right: 10px;
     }
+
+    &--remove {
+      background-color: $red;
+    }
+
+    &--added {
+      background-color: $gray1;
+    }
+  }
+
+  &__container {
+    @include flex-center;
   }
 }
