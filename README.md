@@ -1,6 +1,70 @@
-# Getting Started with Create React App
+# CLOTHESSTORE
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a website where you can choose your favorite clothes and add it to shop cart, also you can use a search input to get items from MercadoLibre api and a section of most relevant items. This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Live demo
+
+## Preview Image
+
+## Libraries used
+
+### React
+
+[v17.0.2](https://reactjs.org/)
+
+React was used to add individual components.
+
+### Sass
+
+[v1.36.0](https://sass-lang.com/)
+
+Sass was used to add styles to the project.
+
+### React router dom
+
+[v5.2.0](https://reacttraining.com/react-router/)
+
+React router dom was added to create a single page application.
+
+### Redux
+
+[v4.1.0](https://redux.js.org/)
+
+Redux was added to create a global state.
+
+### React redux
+
+[v7.2.4](https://react-redux.js.org/)
+
+React redux was added to connect the react app with redux store.
+
+### Redux saga
+
+[v1.1.3](https://redux-saga.js.org/)
+
+Redux saga was added to intercept redux actions and do fetch to APIs.
+
+### Jest
+
+[v26.6](https://jestjs.io/)
+
+Jest was added to do unit testing.
+
+### Enzyme
+
+[v3.11.0](https://enzymejs.github.io/enzyme/)
+
+Enzyme was added to do unit testing for react components.
+
+### @testing-library/react-hooks
+
+[v7.0.1](https://react-hooks-testing-library.com/)
+
+React hooks testing library was added to do unit testing for custom react hooks.
+
+## Author
+
+William Santiago Alzate - Frontend Developer
 
 ## Available Scripts
 
@@ -19,6 +83,10 @@ You will also see any lint errors in the console.
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
+### `yarn test:coverage`
+
+Launches the test runner in the interactive watch mode with total project coverage report.
+
 ### `yarn build`
 
 Builds the app for production to the `build` folder.\
@@ -28,43 +96,3 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
