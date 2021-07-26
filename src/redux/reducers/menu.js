@@ -1,6 +1,6 @@
 import { CLOSE_MENU, OPEN_MENU } from '../consts';
 
-const initialState = {
+export const initialState = {
   menuClassName: 'menu menu--collapsed'
 }
 

@@ -1,6 +1,6 @@
 import { ADD_ITEM, REMOVE_ITEM } from '../consts';
 
-const initialState = {
+export const initialState = {
   cartProducts: [],
 	productsIds: []
 }
@@ -20,7 +20,7 @@ export const cart = (state = initialState, action) => {
 				cartProducts: newCartProducts,
 				productsIds: newProductsIds
 			}
-			case REMOVE_ITEM:
+		case REMOVE_ITEM:
 			const { productId } = action.payload;
 			return {
 				...state,
