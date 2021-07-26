@@ -8,7 +8,7 @@ import {
 	SHOW_HOME_SECTION 
 } from '../consts';
 
-const initialState = {
+export const initialState = {
   products: [],
   loadingProducts: false,
   searchedProducts: [],
@@ -31,7 +31,6 @@ export const products = (state = initialState, action) => {
 				products: action.result.results
 			}
     case ERROR_GET_PRODUCTS:
-      console.log(action.error);
 			return {
 				...state,
 				loadingProducts: false
@@ -50,7 +49,6 @@ export const products = (state = initialState, action) => {
 				searchedProducts: action.result.results
 			}
     case ERROR_SEARCH_PRODUCTS:
-      console.log(action.error);
 			return {
 				...state,
 				loadingSearchedProducts: false,
