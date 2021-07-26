@@ -4,7 +4,11 @@ This is a website where you can choose your favorite clothes and add it to shop 
 
 ## Live demo
 
+Check the project live demo on this link [CLOTHESSTORE](https://clothes-store-test.web.app/)
+
 ## Preview Image
+
+![image](https://user-images.githubusercontent.com/55466321/127030817-b8937859-ec7c-4cd4-9fe5-beeced236655.png)
 
 ## Libraries used
 
